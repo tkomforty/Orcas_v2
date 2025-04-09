@@ -1,0 +1,7 @@
+<?xml version="1.0" ?>
+<Factory>
+  <Vendor Email="no-one@nobody.com" Url="http://www.steinberg.com" Name="Tony Komforty" />
+  <Plugins>
+    <Plugin subCategories="Fx" macCategory="aufx" ProcessorId="{F651A760-D459-4201-8CA9-352427E4B241}" ControllerId="{BF897ED7-6B9C-41E3-B59C-BA266667FCFB}" Name="FXT_orcas_2" ManufacturerId="TnyK" PluginID="1900898659" Version="1.0.0.0" latencyCompensation="1" outputNames="Signal Out,Signal Out" inputCount="2" outputCount="2" />
+  </Plugins>
+</Factory>

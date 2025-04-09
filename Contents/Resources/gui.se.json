@@ -1,0 +1,1460 @@
+
+{
+	"gui" : 
+	{
+		"connections" : [],
+		"handle" : 1033169909,
+		"height" : 360,
+		"modules" : 
+		[
+			
+			{
+				"Pins" : 
+				[
+					
+					{
+						"Id" : 1,
+						"default" : "1"
+					},
+					
+					{
+						"default" : "1"
+					},
+					
+					{
+						"default" : "0"
+					}
+				],
+				"connections" : 
+				[
+					
+					{
+						"fMod" : 1684018294,
+						"fPin" : 8,
+						"tMod" : 1092572920
+					},
+					
+					{
+						"fMod" : 1684018294,
+						"fPin" : 9,
+						"tMod" : 1092572920,
+						"tPin" : 3
+					},
+					
+					{
+						"fMod" : 1684018294,
+						"fPin" : 10,
+						"tMod" : 1092572920,
+						"tPin" : 4
+					},
+					
+					{
+						"fMod" : 1684018294,
+						"fPin" : 11,
+						"tMod" : 1092572920,
+						"tPin" : 6
+					}
+				],
+				"handle" : 1878328778,
+				"modules" : 
+				[
+					
+					{
+						"Pins" : 
+						[
+							
+							{
+								"default" : "sat"
+							},
+							
+							{
+								"Id" : 2,
+								"default" : "FFFFFFFF"
+							},
+							
+							{
+								"default" : "00000000"
+							},
+							
+							{
+								"default" : "0"
+							},
+							
+							{
+								"default" : "0"
+							},
+							
+							{
+								"Id" : 7,
+								"default" : "1"
+							}
+						],
+						"handle" : 548579783,
+						"pb" : 212,
+						"pl" : 32,
+						"pr" : 132,
+						"pt" : 112,
+						"type" : "ED_TextEntry"
+					},
+					
+					{
+						"handle" : 1684018294,
+						"type" : "SE PatchMemory Float"
+					},
+					
+					{
+						"Pins" : 
+						[
+							
+							{
+								"Id" : 1,
+								"default" : "C:\\Users\\Public\\Documents\\SynthEdit Projects\\skins\\orcas\\knobTK_11.png"
+							}
+						],
+						"handle" : 1092572920,
+						"pb" : 124,
+						"pl" : 32,
+						"pr" : 132,
+						"pt" : 24,
+						"type" : "Image3"
+					}
+				],
+				"pb" : 324,
+				"pl" : 216,
+				"pr" : 316,
+				"pt" : 136,
+				"type" : "Container"
+			},
+			
+			{
+				"Pins" : 
+				[
+					
+					{
+						"Id" : 1,
+						"default" : "1"
+					},
+					
+					{
+						"default" : "1"
+					},
+					
+					{
+						"default" : "0"
+					}
+				],
+				"connections" : 
+				[
+					
+					{
+						"fMod" : 1823502064,
+						"fPin" : 8,
+						"tMod" : 385215490
+					},
+					
+					{
+						"fMod" : 1823502064,
+						"fPin" : 9,
+						"tMod" : 385215490,
+						"tPin" : 3
+					},
+					
+					{
+						"fMod" : 1823502064,
+						"fPin" : 10,
+						"tMod" : 385215490,
+						"tPin" : 4
+					},
+					
+					{
+						"fMod" : 1823502064,
+						"fPin" : 11,
+						"tMod" : 385215490,
+						"tPin" : 6
+					}
+				],
+				"handle" : 2005788994,
+				"modules" : 
+				[
+					
+					{
+						"Pins" : 
+						[
+							
+							{
+								"default" : "filter res"
+							},
+							
+							{
+								"Id" : 2,
+								"default" : "FFFFFFFF"
+							},
+							
+							{
+								"default" : "00000000"
+							},
+							
+							{
+								"default" : "0"
+							},
+							
+							{
+								"default" : "0"
+							},
+							
+							{
+								"Id" : 7,
+								"default" : "1"
+							}
+						],
+						"handle" : 2090219801,
+						"pb" : 214,
+						"pl" : 47,
+						"pr" : 147,
+						"pt" : 114,
+						"type" : "ED_TextEntry"
+					},
+					
+					{
+						"handle" : 1823502064,
+						"type" : "SE PatchMemory Float"
+					},
+					
+					{
+						"Pins" : 
+						[
+							
+							{
+								"Id" : 1,
+								"default" : "C:\\Users\\Public\\Documents\\SynthEdit Projects\\skins\\orcas\\knobTK8.png"
+							}
+						],
+						"handle" : 385215490,
+						"pb" : 152,
+						"pl" : 32,
+						"pr" : 160,
+						"pt" : 24,
+						"type" : "Image3"
+					}
+				],
+				"pb" : 390,
+				"pl" : 136,
+				"pr" : 264,
+				"pt" : 200,
+				"type" : "Container"
+			},
+			
+			{
+				"Pins" : 
+				[
+					
+					{
+						"Id" : 1,
+						"default" : "1"
+					},
+					
+					{
+						"default" : "1"
+					},
+					
+					{
+						"default" : "0"
+					}
+				],
+				"connections" : 
+				[
+					
+					{
+						"fMod" : 1655524512,
+						"fPin" : 8,
+						"tMod" : 1387172332
+					},
+					
+					{
+						"fMod" : 1655524512,
+						"fPin" : 9,
+						"tMod" : 1387172332,
+						"tPin" : 3
+					},
+					
+					{
+						"fMod" : 1655524512,
+						"fPin" : 10,
+						"tMod" : 1387172332,
+						"tPin" : 4
+					},
+					
+					{
+						"fMod" : 1655524512,
+						"fPin" : 11,
+						"tMod" : 1387172332,
+						"tPin" : 6
+					}
+				],
+				"handle" : 2052989186,
+				"modules" : 
+				[
+					
+					{
+						"Pins" : 
+						[
+							
+							{
+								"default" : "filter"
+							},
+							
+							{
+								"Id" : 2,
+								"default" : "FFFFFFFF"
+							},
+							
+							{
+								"default" : "00000000"
+							},
+							
+							{
+								"default" : "0"
+							},
+							
+							{
+								"default" : "0"
+							},
+							
+							{
+								"Id" : 7,
+								"default" : "1"
+							}
+						],
+						"handle" : 863355284,
+						"pb" : 212,
+						"pl" : 32,
+						"pr" : 132,
+						"pt" : 112,
+						"type" : "ED_TextEntry"
+					},
+					
+					{
+						"handle" : 1655524512,
+						"type" : "SE PatchMemory Float"
+					},
+					
+					{
+						"Pins" : 
+						[
+							
+							{
+								"Id" : 1,
+								"default" : "C:\\Users\\Public\\Documents\\SynthEdit Projects\\skins\\orcas\\knobTK_11.png"
+							}
+						],
+						"handle" : 1387172332,
+						"pb" : 124,
+						"pl" : 32,
+						"pr" : 132,
+						"pt" : 24,
+						"type" : "Image3"
+					}
+				],
+				"pb" : 396,
+				"pl" : 48,
+				"pr" : 148,
+				"pt" : 208,
+				"type" : "Container"
+			},
+			
+			{
+				"Pins" : 
+				[
+					
+					{
+						"Id" : 1,
+						"default" : "1"
+					},
+					
+					{
+						"default" : "1"
+					},
+					
+					{
+						"default" : "0"
+					}
+				],
+				"connections" : 
+				[
+					
+					{
+						"fMod" : 815213147,
+						"fPin" : 8,
+						"tMod" : 1105500950
+					},
+					
+					{
+						"fMod" : 815213147,
+						"fPin" : 9,
+						"tMod" : 1105500950,
+						"tPin" : 3
+					},
+					
+					{
+						"fMod" : 815213147,
+						"fPin" : 10,
+						"tMod" : 1105500950,
+						"tPin" : 4
+					},
+					
+					{
+						"fMod" : 815213147,
+						"fPin" : 11,
+						"tMod" : 1105500950,
+						"tPin" : 6
+					}
+				],
+				"handle" : 1863417559,
+				"modules" : 
+				[
+					
+					{
+						"Pins" : 
+						[
+							
+							{
+								"default" : "mod"
+							},
+							
+							{
+								"Id" : 2,
+								"default" : "FFFFFFFF"
+							},
+							
+							{
+								"default" : "00000000"
+							},
+							
+							{
+								"default" : "0"
+							},
+							
+							{
+								"default" : "0"
+							},
+							
+							{
+								"Id" : 7,
+								"default" : "1"
+							}
+						],
+						"handle" : 663471209,
+						"pb" : 229,
+						"pl" : 39,
+						"pr" : 139,
+						"pt" : 129,
+						"type" : "ED_TextEntry"
+					},
+					
+					{
+						"handle" : 815213147,
+						"type" : "SE PatchMemory Float"
+					},
+					
+					{
+						"Pins" : 
+						[
+							
+							{
+								"Id" : 1,
+								"default" : "C:\\Users\\Public\\Documents\\SynthEdit Projects\\skins\\orcas\\knobTK_9.png"
+							}
+						],
+						"handle" : 1105500950,
+						"pb" : 146,
+						"pl" : 28,
+						"pr" : 156,
+						"pt" : 18,
+						"type" : "Image3"
+					}
+				],
+				"pb" : 243,
+				"pl" : 472,
+				"pr" : 600,
+				"pt" : 32,
+				"type" : "Container"
+			},
+			
+			{
+				"Pins" : 
+				[
+					
+					{
+						"Id" : 1,
+						"default" : "1"
+					},
+					
+					{
+						"default" : "1"
+					},
+					
+					{
+						"default" : "0"
+					}
+				],
+				"connections" : 
+				[
+					
+					{
+						"fMod" : 1136671969,
+						"fPin" : 8,
+						"tMod" : 915677013
+					},
+					
+					{
+						"fMod" : 1136671969,
+						"fPin" : 9,
+						"tMod" : 915677013,
+						"tPin" : 3
+					},
+					
+					{
+						"fMod" : 1136671969,
+						"fPin" : 10,
+						"tMod" : 915677013,
+						"tPin" : 4
+					},
+					
+					{
+						"fMod" : 1136671969,
+						"fPin" : 11,
+						"tMod" : 915677013,
+						"tPin" : 6
+					}
+				],
+				"handle" : 246962829,
+				"modules" : 
+				[
+					
+					{
+						"Pins" : 
+						[
+							
+							{
+								"default" : "rev mix"
+							},
+							
+							{
+								"Id" : 2,
+								"default" : "FFFFFFFF"
+							},
+							
+							{
+								"default" : "00000000"
+							},
+							
+							{
+								"default" : "0"
+							},
+							
+							{
+								"default" : "0"
+							},
+							
+							{
+								"Id" : 7,
+								"default" : "1"
+							}
+						],
+						"handle" : 85434749,
+						"pb" : 229,
+						"pl" : 39,
+						"pr" : 139,
+						"pt" : 129,
+						"type" : "ED_TextEntry"
+					},
+					
+					{
+						"handle" : 1136671969,
+						"type" : "SE PatchMemory Float"
+					},
+					
+					{
+						"Pins" : 
+						[
+							
+							{
+								"Id" : 1,
+								"default" : "C:\\Users\\Public\\Documents\\SynthEdit Projects\\skins\\orcas\\knobTK_9.png"
+							}
+						],
+						"handle" : 915677013,
+						"pb" : 146,
+						"pl" : 28,
+						"pr" : 156,
+						"pt" : 18,
+						"type" : "Image3"
+					}
+				],
+				"pb" : 403,
+				"pl" : 288,
+				"pr" : 416,
+				"pt" : 192,
+				"type" : "Container"
+			},
+			
+			{
+				"Pins" : 
+				[
+					
+					{
+						"Id" : 10,
+						"parameterId" : 0
+					},
+					
+					{
+						"Id" : 13,
+						"default" : "4"
+					},
+					
+					{
+						"Id" : 11,
+						"default" : ""
+					}
+				],
+				"handle" : 19563294,
+				"pb" : 313,
+				"pl" : 549,
+				"pr" : 585,
+				"pt" : 225,
+				"type" : "SE List Entry"
+			},
+			
+			{
+				"Pins" : 
+				[
+					
+					{
+						"Id" : 1,
+						"default" : "1"
+					},
+					
+					{
+						"default" : "1"
+					},
+					
+					{
+						"default" : "0"
+					}
+				],
+				"connections" : 
+				[
+					
+					{
+						"fMod" : 1494602555,
+						"fPin" : 8,
+						"tMod" : 308511243
+					},
+					
+					{
+						"fMod" : 1494602555,
+						"fPin" : 9,
+						"tMod" : 308511243,
+						"tPin" : 3
+					},
+					
+					{
+						"fMod" : 1494602555,
+						"fPin" : 10,
+						"tMod" : 308511243,
+						"tPin" : 4
+					},
+					
+					{
+						"fMod" : 1494602555,
+						"fPin" : 11,
+						"tMod" : 308511243,
+						"tPin" : 6
+					}
+				],
+				"handle" : 915595218,
+				"modules" : 
+				[
+					
+					{
+						"Pins" : 
+						[
+							
+							{
+								"default" : "diffuse"
+							},
+							
+							{
+								"Id" : 2,
+								"default" : "FFFFFFFF"
+							},
+							
+							{
+								"default" : "00000000"
+							},
+							
+							{
+								"default" : "0"
+							},
+							
+							{
+								"default" : "0"
+							},
+							
+							{
+								"Id" : 7,
+								"default" : "1"
+							}
+						],
+						"handle" : 1028051091,
+						"pb" : 216,
+						"pl" : 47,
+						"pr" : 147,
+						"pt" : 116,
+						"type" : "ED_TextEntry"
+					},
+					
+					{
+						"handle" : 1494602555,
+						"type" : "SE PatchMemory Float"
+					},
+					
+					{
+						"Pins" : 
+						[
+							
+							{
+								"Id" : 1,
+								"default" : "C:\\Users\\Public\\Documents\\SynthEdit Projects\\skins\\orcas\\knobTK8.png"
+							}
+						],
+						"handle" : 308511243,
+						"pb" : 152,
+						"pl" : 32,
+						"pr" : 160,
+						"pt" : 24,
+						"type" : "Image3"
+					}
+				],
+				"pb" : 224,
+				"pl" : 352,
+				"pr" : 480,
+				"pt" : 32,
+				"type" : "Container"
+			},
+			
+			{
+				"Pins" : 
+				[
+					
+					{
+						"Id" : 1,
+						"default" : "1"
+					},
+					
+					{
+						"default" : "1"
+					},
+					
+					{
+						"default" : "0"
+					}
+				],
+				"connections" : 
+				[
+					
+					{
+						"fMod" : 2033417599,
+						"fPin" : 8,
+						"tMod" : 374676166
+					},
+					
+					{
+						"fMod" : 2033417599,
+						"fPin" : 9,
+						"tMod" : 374676166,
+						"tPin" : 3
+					},
+					
+					{
+						"fMod" : 2033417599,
+						"fPin" : 10,
+						"tMod" : 374676166,
+						"tPin" : 4
+					},
+					
+					{
+						"fMod" : 2033417599,
+						"fPin" : 11,
+						"tMod" : 374676166,
+						"tPin" : 6
+					}
+				],
+				"handle" : 354506573,
+				"modules" : 
+				[
+					
+					{
+						"Pins" : 
+						[
+							
+							{
+								"default" : "wet<>dry"
+							},
+							
+							{
+								"Id" : 2,
+								"default" : "FFFFFFFF"
+							},
+							
+							{
+								"default" : "00000000"
+							},
+							
+							{
+								"default" : "0"
+							},
+							
+							{
+								"default" : "0"
+							},
+							
+							{
+								"Id" : 7,
+								"default" : "1"
+							}
+						],
+						"handle" : 419264504,
+						"pb" : 229,
+						"pl" : 39,
+						"pr" : 139,
+						"pt" : 129,
+						"type" : "ED_TextEntry"
+					},
+					
+					{
+						"handle" : 2033417599,
+						"type" : "SE PatchMemory Float"
+					},
+					
+					{
+						"Pins" : 
+						[
+							
+							{
+								"Id" : 1,
+								"default" : "C:\\Users\\Public\\Documents\\SynthEdit Projects\\skins\\orcas\\knobTK_9.png"
+							}
+						],
+						"handle" : 374676166,
+						"pb" : 146,
+						"pl" : 28,
+						"pr" : 156,
+						"pt" : 18,
+						"type" : "Image3"
+					}
+				],
+				"pb" : 405,
+				"pl" : 412,
+				"pr" : 540,
+				"pt" : 194,
+				"type" : "Container"
+			},
+			
+			{
+				"Pins" : 
+				[
+					
+					{
+						"Id" : 1,
+						"default" : "1"
+					},
+					
+					{
+						"default" : "1"
+					},
+					
+					{
+						"default" : "0"
+					}
+				],
+				"connections" : 
+				[
+					
+					{
+						"fMod" : 747161056,
+						"fPin" : 8,
+						"tMod" : 92595153
+					},
+					
+					{
+						"fMod" : 747161056,
+						"fPin" : 9,
+						"tMod" : 92595153,
+						"tPin" : 3
+					},
+					
+					{
+						"fMod" : 747161056,
+						"fPin" : 10,
+						"tMod" : 92595153,
+						"tPin" : 4
+					},
+					
+					{
+						"fMod" : 747161056,
+						"fPin" : 11,
+						"tMod" : 92595153,
+						"tPin" : 6
+					}
+				],
+				"handle" : 2146707808,
+				"modules" : 
+				[
+					
+					{
+						"Pins" : 
+						[
+							
+							{
+								"default" : "damp"
+							},
+							
+							{
+								"Id" : 2,
+								"default" : "FFFFFFFF"
+							},
+							
+							{
+								"default" : "00000000"
+							},
+							
+							{
+								"default" : "0"
+							},
+							
+							{
+								"default" : "0"
+							},
+							
+							{
+								"Id" : 7,
+								"default" : "1"
+							}
+						],
+						"handle" : 1486084019,
+						"pb" : 215,
+						"pl" : 46,
+						"pr" : 146,
+						"pt" : 115,
+						"type" : "ED_TextEntry"
+					},
+					
+					{
+						"handle" : 747161056,
+						"type" : "SE PatchMemory Float"
+					},
+					
+					{
+						"Pins" : 
+						[
+							
+							{
+								"Id" : 1,
+								"default" : "C:\\Users\\Public\\Documents\\SynthEdit Projects\\skins\\orcas\\knobTK8.png"
+							}
+						],
+						"handle" : 92595153,
+						"pb" : 152,
+						"pl" : 32,
+						"pr" : 160,
+						"pt" : 24,
+						"type" : "Image3"
+					}
+				],
+				"pb" : 223,
+				"pl" : 136,
+				"pr" : 264,
+				"pt" : 32,
+				"type" : "Container"
+			},
+			
+			{
+				"Pins" : 
+				[
+					
+					{
+						"Id" : 1,
+						"default" : "1"
+					},
+					
+					{
+						"default" : "1"
+					},
+					
+					{
+						"default" : "0"
+					}
+				],
+				"connections" : 
+				[
+					
+					{
+						"fMod" : 506038373,
+						"fPin" : 8,
+						"tMod" : 811695328
+					},
+					
+					{
+						"fMod" : 506038373,
+						"fPin" : 9,
+						"tMod" : 811695328,
+						"tPin" : 3
+					},
+					
+					{
+						"fMod" : 506038373,
+						"fPin" : 10,
+						"tMod" : 811695328,
+						"tPin" : 4
+					},
+					
+					{
+						"fMod" : 506038373,
+						"fPin" : 11,
+						"tMod" : 811695328,
+						"tPin" : 6
+					}
+				],
+				"handle" : 409983815,
+				"modules" : 
+				[
+					
+					{
+						"Pins" : 
+						[
+							
+							{
+								"default" : "width"
+							},
+							
+							{
+								"Id" : 2,
+								"default" : "FFFFFFFF"
+							},
+							
+							{
+								"default" : "00000000"
+							},
+							
+							{
+								"default" : "0"
+							},
+							
+							{
+								"default" : "0"
+							},
+							
+							{
+								"Id" : 7,
+								"default" : "1"
+							}
+						],
+						"handle" : 981755702,
+						"pb" : 215,
+						"pl" : 46,
+						"pr" : 146,
+						"pt" : 115,
+						"type" : "ED_TextEntry"
+					},
+					
+					{
+						"handle" : 506038373,
+						"type" : "SE PatchMemory Float"
+					},
+					
+					{
+						"Pins" : 
+						[
+							
+							{
+								"Id" : 1,
+								"default" : "C:\\Users\\Public\\Documents\\SynthEdit Projects\\skins\\orcas\\knobTK8.png"
+							}
+						],
+						"handle" : 811695328,
+						"pb" : 152,
+						"pl" : 32,
+						"pr" : 160,
+						"pt" : 24,
+						"type" : "Image3"
+					}
+				],
+				"pb" : 223,
+				"pl" : 248,
+				"pr" : 376,
+				"pt" : 32,
+				"type" : "Container"
+			},
+			
+			{
+				"Pins" : 
+				[
+					
+					{
+						"Id" : 1,
+						"default" : "1"
+					},
+					
+					{
+						"default" : "1"
+					},
+					
+					{
+						"default" : "0"
+					}
+				],
+				"connections" : 
+				[
+					
+					{
+						"fMod" : 13327,
+						"fPin" : 8,
+						"tMod" : 103103446
+					},
+					
+					{
+						"fMod" : 13327,
+						"fPin" : 9,
+						"tMod" : 103103446,
+						"tPin" : 3
+					},
+					
+					{
+						"fMod" : 13327,
+						"fPin" : 10,
+						"tMod" : 103103446,
+						"tPin" : 4
+					},
+					
+					{
+						"fMod" : 13327,
+						"fPin" : 11,
+						"tMod" : 103103446,
+						"tPin" : 6
+					}
+				],
+				"handle" : 17954,
+				"modules" : 
+				[
+					
+					{
+						"Pins" : 
+						[
+							
+							{
+								"default" : "space"
+							},
+							
+							{
+								"Id" : 2,
+								"default" : "FFFFFFFF"
+							},
+							
+							{
+								"default" : "00000000"
+							},
+							
+							{
+								"default" : "0"
+							},
+							
+							{
+								"default" : "0"
+							},
+							
+							{
+								"Id" : 7,
+								"default" : "1"
+							}
+						],
+						"handle" : 1527184353,
+						"pb" : 214,
+						"pl" : 47,
+						"pr" : 147,
+						"pt" : 114,
+						"type" : "ED_TextEntry"
+					},
+					
+					{
+						"handle" : 13327,
+						"type" : "SE PatchMemory Float"
+					},
+					
+					{
+						"Pins" : 
+						[
+							
+							{
+								"Id" : 1,
+								"default" : "C:\\Users\\Public\\Documents\\SynthEdit Projects\\skins\\orcas\\knobTK8.png"
+							}
+						],
+						"handle" : 103103446,
+						"pb" : 152,
+						"pl" : 32,
+						"pr" : 160,
+						"pt" : 24,
+						"type" : "Image3"
+					}
+				],
+				"pb" : 222,
+				"pl" : 31,
+				"pr" : 159,
+				"pt" : 32,
+				"type" : "Container"
+			},
+			
+			{
+				"Pins" : 
+				[
+					
+					{
+						"Id" : 1,
+						"default" : "1"
+					},
+					
+					{
+						"default" : "1"
+					}
+				],
+				"connections" : 
+				[
+					
+					{
+						"fMod" : 1211210286,
+						"fPin" : 7,
+						"tMod" : 1481081686
+					},
+					
+					{
+						"fMod" : 1211210286,
+						"fPin" : 7,
+						"tMod" : 561980269,
+						"tPin" : 7
+					},
+					
+					{
+						"fMod" : 1211210286,
+						"fPin" : 8,
+						"tMod" : 305257743
+					},
+					
+					{
+						"fMod" : 1481081686,
+						"fPin" : 2,
+						"tMod" : 1415972629
+					}
+				],
+				"handle" : 1659849794,
+				"modules" : 
+				[
+					
+					{
+						"handle" : 1211210286,
+						"type" : "SE PatchMemory Float"
+					},
+					
+					{
+						"Pins" : 
+						[
+							
+							{
+								"Id" : 1,
+								"default" : "vslider_med.png"
+							}
+						],
+						"handle" : 305257743,
+						"pb" : 88,
+						"pl" : 208,
+						"pr" : 236,
+						"pt" : 48,
+						"type" : "Image3"
+					},
+					
+					{
+						"handle" : 1415972629,
+						"pb" : 112,
+						"pl" : 192,
+						"pr" : 248,
+						"pt" : 88,
+						"type" : "SE Text Entry4"
+					},
+					
+					{
+						"handle" : 1481081686,
+						"type" : "SE FloatToText GUI"
+					}
+				],
+				"pb" : 584,
+				"pl" : 352,
+				"pr" : 408,
+				"pt" : 520,
+				"type" : "Container"
+			},
+			
+			{
+				"Pins" : 
+				[
+					
+					{
+						"Id" : 1,
+						"default" : "1"
+					},
+					
+					{
+						"default" : "1"
+					}
+				],
+				"connections" : 
+				[
+					
+					{
+						"fMod" : 2071147088,
+						"fPin" : 7,
+						"tMod" : 561980269,
+						"tPin" : 6
+					},
+					
+					{
+						"fMod" : 2071147088,
+						"fPin" : 7,
+						"tMod" : 888563093
+					},
+					
+					{
+						"fMod" : 2071147088,
+						"fPin" : 8,
+						"tMod" : 35010530
+					},
+					
+					{
+						"fMod" : 888563093,
+						"fPin" : 2,
+						"tMod" : 138180672
+					}
+				],
+				"handle" : 1358523667,
+				"modules" : 
+				[
+					
+					{
+						"handle" : 2071147088,
+						"type" : "SE PatchMemory Float"
+					},
+					
+					{
+						"Pins" : 
+						[
+							
+							{
+								"Id" : 1,
+								"default" : "vslider_med.png"
+							}
+						],
+						"handle" : 35010530,
+						"pb" : 88,
+						"pl" : 208,
+						"pr" : 236,
+						"pt" : 48,
+						"type" : "Image3"
+					},
+					
+					{
+						"handle" : 138180672,
+						"pb" : 112,
+						"pl" : 192,
+						"pr" : 248,
+						"pt" : 88,
+						"type" : "SE Text Entry4"
+					},
+					
+					{
+						"handle" : 888563093,
+						"type" : "SE FloatToText GUI"
+					}
+				],
+				"pb" : 584,
+				"pl" : 272,
+				"pr" : 328,
+				"pt" : 520,
+				"type" : "Container"
+			},
+			
+			{
+				"Pins" : 
+				[
+					
+					{
+						"Id" : 1,
+						"default" : "00FF9A00"
+					},
+					
+					{
+						"default" : "00FF9A00"
+					},
+					
+					{
+						"default" : "FF0082FF"
+					},
+					
+					{
+						"default" : "00000000"
+					},
+					
+					{
+						"default" : "00000000"
+					},
+					
+					{
+						"Id" : 8,
+						"default" : "2000"
+					}
+				],
+				"handle" : 561980269,
+				"pb" : 320,
+				"pl" : 32,
+				"pr" : 608,
+				"pt" : 40,
+				"type" : "ED_Oscilloscope"
+			},
+			
+			{
+				"Pins" : 
+				[
+					
+					{
+						"Id" : 0,
+						"default" : "background"
+					},
+					
+					{
+						"Id" : 1,
+						"default" : "1"
+					}
+				],
+				"handle" : 2013782026,
+				"ignoremouse" : "true",
+				"pb" : 360,
+				"pl" : 0,
+				"pr" : 640,
+				"pt" : 0,
+				"type" : "SE Plain Image"
+			}
+		],
+		"skin" : "orcas",
+		"vst_about_text" : "",
+		"vst_nag_user" : false,
+		"width" : 640
+	}
+}

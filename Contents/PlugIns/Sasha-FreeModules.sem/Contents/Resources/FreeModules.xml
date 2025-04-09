@@ -1,0 +1,723 @@
+<?xml version="1.0" ?>
+<PluginList>
+
+
+	
+	<!-- Accumulator ================================================================ -->
+
+	<Plugin id="Sasha-Accumulator Audio" name="s Accumulator (Audio)" category="Sasha Modules\Modifiers" helpUrl="..\Sasha\Help\s-Accumulator.html">
+		<Audio>
+			<Pin name="In"    datatype="float" rate="audio" />
+			<Pin name="Gate"  datatype="bool" />
+			<Pin name="Reset" datatype="bool" />
+			<Pin name="Out"   datatype="float" rate="audio" direction="out"/>
+		</Audio>
+	</Plugin>
+	
+	<Plugin id="Sasha-Accumulator Int" name="s Accumulator (Int)" category="Sasha Modules\Modifiers" helpUrl="..\Sasha\Help\s-Accumulator.html">
+		<Audio>
+			<Pin name="In"    datatype="int" />
+			<Pin name="Gate"  datatype="bool" />
+			<Pin name="Reset" datatype="bool" />
+			<Pin name="Out"   datatype="int" direction="out"/>
+		</Audio>
+	</Plugin>
+
+	<Plugin id="Sasha-Accumulator Float" name="s Accumulator (Float)" category="Sasha Modules\Modifiers" helpUrl="..\Sasha\Help\s-Accumulator.html">
+		<Audio>
+			<Pin name="In"    datatype="float" />
+			<Pin name="Gate"  datatype="bool" />
+			<Pin name="Reset" datatype="bool" />
+			<Pin name="Out"   datatype="float" direction="out"/>
+		</Audio>
+	</Plugin>
+	
+	
+	
+	<!-- Constant ================================================================ -->
+
+	<Plugin id="Sasha-Constant Bool" name="s Const" category="Sasha Modules\Sub-Controls\Bool" helpUrl="..\Sasha\Help\s-Const.html">
+		<GUI>
+			<Pin name="Bool" datatype="bool" isMinimised="true" />
+			<Pin name="Bool" datatype="bool" direction="out"/>
+		</GUI>
+	</Plugin>
+
+	<Plugin id="Sasha-Constant Float" name="s Const" category="Sasha Modules\Sub-Controls\Float" helpUrl="..\Sasha\Help\s-Const.html">
+		<GUI>
+			<Pin name="Float" datatype="float" isMinimised="true" />
+			<Pin name="Float" datatype="float" direction="out"/>
+		</GUI>
+	</Plugin>
+
+	<Plugin id="Sasha-Constant Int" name="s Const" category="Sasha Modules\Sub-Controls\Int" helpUrl="..\Sasha\Help\s-Const.html">
+		<GUI>
+			<Pin name="Int" datatype="int" isMinimised="true" />
+			<Pin name="Int" datatype="int" direction="out"/>
+		</GUI>
+	</Plugin>
+
+	<Plugin id="Sasha-Constant Text" name="s Const" category="Sasha Modules\Sub-Controls\Text" helpUrl="..\Sasha\Help\s-Const.html">
+		<GUI>
+			<Pin name="Text" datatype="string" isMinimised="true" />
+			<Pin name="Text" datatype="string" direction="out"/>
+		</GUI>
+	</Plugin>
+	
+	
+	
+	<!-- dB to Volts ================================================================ -->
+	
+	<Plugin id="Sasha-dB to Volts" name="s dB to Volts" category="Sasha Modules/Conversion">
+		<Audio>
+			<Pin name="Precision" datatype="enum"  metadata="Fast, Accurate" isMinimised="true" />
+			<Pin name="dB"        datatype="float" rate="audio" />
+			<Pin name="Volts"     datatype="float" rate="audio" direction="out" />
+		</Audio>
+	</Plugin>
+
+	<Plugin id="Sasha-Volts to dB" name="s Volts to dB" category="Sasha Modules/Conversion">
+		<Audio>
+			<Pin name="Precision" datatype="enum"  metadata="Fast, Accurate" isMinimised="true" />
+			<Pin name="Volts"     datatype="float" rate="audio" />
+			<Pin name="dB"        datatype="float" rate="audio" direction="out" />
+		</Audio>
+	</Plugin>
+	
+	
+	
+	<!-- Delay ================================================================ -->
+
+	<Plugin id="Sasha-All Pass" name="s All Pass" category="Sasha Modules\Delay" helpUrl="..\Sasha\Help\s-All-Pass-Delay.html">
+		<Audio>
+			<Pin name="Active"        datatype="bool"  default="1" />
+			<Pin name="In"            datatype="float" rate="audio" linearInput="true" />
+			<Pin name="Max Delay (s)" datatype="float" isMinimised="true" default="1" />
+			<Pin name="Modulation"    datatype="float" rate="audio" metadata=",, 10, 0" default="1" />
+			<Pin name="Diffusion"     datatype="float" rate="audio" metadata=",, 5, -5" default="-0.5" />
+			<Pin name="Interpolate"   datatype="bool"  isMinimised="true" default="1" />
+			<Pin name="Out"           datatype="float" rate="audio" direction="out" />
+		</Audio>
+	</Plugin>
+
+	<Plugin id="Sasha-Delay" name="s Delay" category="Sasha Modules\Delay" helpUrl="..\Sasha\Help\s-Delay.html">
+		<Audio>
+			<Pin name="Active"        datatype="bool"  default="1" />
+			<Pin name="In"            datatype="float" rate="audio" linearInput="true" />
+			<Pin name="Max Delay (s)" datatype="float" isMinimised="true" default="1" />
+			<Pin name="Modulation"    datatype="float" rate="audio" metadata=",, 10, 0" default="1" />
+			<Pin name="Feedback"      datatype="float" rate="audio" metadata=",, 10, 0" />
+			<Pin name="Interpolate"   datatype="bool"  isMinimised="true" default="1" />
+			<Pin name="Out"           datatype="float" rate="audio" direction="out" />
+		</Audio>
+	</Plugin>
+
+	<Plugin id="Sasha-Unit Delay" name="s Unit Delay" category="Sasha Modules\Delay" helpUrl="..\Sasha\Help\s-Unit-Delay.html">
+		<Audio>
+			<Pin name="In"  datatype="float" rate="audio" linearInput="true" />
+			<Pin name="Out" datatype="float" rate="audio" direction="out" />
+		</Audio>
+	</Plugin>
+
+	<!--<Plugin id="Sasha-Unit Delay GPT" name="s Unit Delay GPT" category="Sasha Modules\Delay">
+		<Audio>
+			<Pin name="In"  datatype="float" rate="audio" linearInput="true" />
+			<Pin name="Out" datatype="float" rate="audio" direction="out" />
+		</Audio>
+	</Plugin>-->
+	
+	
+	
+	<!-- Erase ================================================================ -->
+	
+	<Plugin id="Sasha-Erase Text" name="s Erase" category="Sasha Modules\Sub-Controls\Text" helpUrl="..\Sasha\Help\s-Erase-Text.html">
+		<GUI>
+			<Pin name="Text"  datatype="string" />
+			<Pin name="Erase" datatype="string" />
+			<Pin name="Text"  datatype="string" direction="out" />
+		</GUI>
+	</Plugin>
+
+
+
+	<!-- File ================================================================ -->
+	
+	<Plugin id="Sasha-Text File" name="s File" category="Sasha Modules\Sub-Controls\Text" helpUrl="..\Sasha\Help\s-File-Text.html">
+		<GUI>
+			<Pin name="Text"             datatype="string" />
+			<Pin name="Filename"         datatype="string" />
+			<Pin name="Extension"        datatype="string" default="txt"/>
+			<Pin name="Load"             datatype="bool" direction="out" />
+			<Pin name="Save"             datatype="bool" direction="out" />
+			<Pin name="Rescan (Browser)" datatype="bool" />
+			<Pin name="Choice (Browser)" datatype="int" />
+		</GUI>
+	</Plugin>
+
+
+
+	<!-- Filename Split ================================================================ -->
+	
+	<Plugin id="Sasha-Filename Split" name="s Filename Split" category="Sasha Modules\Sub-Controls\Text" helpUrl="..\Sasha\Help\s-Filename-Split.html">
+		<GUI>
+			<Pin name="Filename"  datatype="string" isFilename="true"/>
+			<Pin name="Path"      datatype="string" direction="out" />
+			<Pin name="Name"      datatype="string" direction="out" />
+			<Pin name="Extension" datatype="string" direction="out" />
+		</GUI>
+	</Plugin>
+
+
+
+	<!-- Freq Analyser ================================================================ -->
+
+	<Plugin id="Sasha-FreqAnalyser 2" name="s Freq Analyser" category="Sasha Modules\Display" helpUrl="..\Sasha\Help\s-Freq-Analyser.html">
+		<Parameters>
+			<Parameter id="0" name="Spectrum" datatype="blob" private="true" ignorePatchChange="true" persistant="false"/>
+		</Parameters>
+		<Audio>							   
+			<Pin name="Spectrum"         datatype="blob"  parameterId="0" direction="out" />
+			<Pin name="In"               datatype="float" rate="audio"    linearInput="true" />
+		</Audio>						 
+		<GUI graphicsApi="GmpiGui">		 
+			<Pin name="Spectrum"         datatype="blob"   parameterId="0" />
+			<Pin name="Slope (dB)"       datatype="float"  />
+			<Pin name="Fade (dB)"        datatype="float"  default="-1" />
+										 
+			<Pin name="Hz High"          datatype="int"    default="20000" />
+			<Pin name="Hz Low"           datatype="int"    default="20" />
+			<Pin name="dB High"          datatype="int"    default="12" />
+			<Pin name="dB Low"           datatype="int"    default="-84" />
+			<Pin name="Row Size (dB)"    datatype="int"    default="12" />
+									     
+			<Pin name="Spectrum Color"   datatype="string" default="FF88AA" />
+			<Pin name="Spectrum Opacity" datatype="float"  default="0.125" />
+										 
+			<Pin name="Text Color"       datatype="string" default="88C4D6F8" />
+			<Pin name="Grid Opacity"     datatype="float"  default="0.125" />
+			<Pin name="Background Color" datatype="string" default="08193B" />
+										 
+			<Pin name="Top Hz Scale"     datatype="bool" />
+			<Pin name="Bottom Hz Scale"  datatype="bool" default="1" />
+			<Pin name="Left dB Scale"    datatype="bool" default="1" />
+			<Pin name="Right dB Scale"   datatype="bool" default="1" />
+			<Pin name="Accent Lines"     datatype="bool" default="1" />
+		</GUI>
+	</Plugin>
+
+	<Plugin id="Sasha-FreqAnalyser" name="s Freq Analyser 1" category="Sasha Modules\Zzz" helpUrl="..\Sasha\Help\s-Freq-Analyser.html">
+		<Parameters>
+			<Parameter id="0" name="Spectrum" datatype="blob" private="true" ignorePatchChange="true" persistant="false"/>
+		</Parameters>
+		<Audio>
+			<Pin name="Spectrum"        datatype="blob"  parameterId="0" direction="out" />
+			<Pin name="In"              datatype="float" rate="audio"    linearInput="true" />
+			<!--<Pin name="FFT Size"        datatype="enum"  metadata="1024=256, 2048=512, 4096=1024" default="512" />-->
+		</Audio>
+		<GUI graphicsApi="GmpiGui">
+			<Pin name="Spectrum"        datatype="blob"   parameterId="0" />
+			<Pin name="Slope (dB)"      datatype="float"  />
+			<Pin name="Fade (dB)"       datatype="float"  default="-3" />
+
+			<Pin name="Hz High"         datatype="int"    default="20000" />
+			<Pin name="Hz Low"          datatype="int"    default="20" />
+			<Pin name="dB High"         datatype="int"    default="12" />
+			<Pin name="dB Low"          datatype="int"    default="-84" />
+			<Pin name="Row Size (dB)"   datatype="int"    default="12" />
+
+			<Pin name="Line Color"      datatype="string" default="FFDDAA" />
+			<Pin name="Fill Top"        datatype="string" default="55FFDDAA" />
+			<Pin name="Fill Bottom"     datatype="string" default="33FFDDAA" />
+			<Pin name="Text Color"      datatype="string" default="55FFDDAA" />
+			<Pin name="Grid Color"      datatype="string" default="11FFDDAA" />
+			<Pin name="Bg Top"          datatype="string" default="191919" />
+			<Pin name="Bg Bottom"       datatype="string" />
+
+			<Pin name="Top Hz Scale"    datatype="bool" default="1" />
+			<Pin name="Bottom Hz Scale" datatype="bool" />
+			<Pin name="Left dB Scale"   datatype="bool" default="1" />
+			<Pin name="Right dB Scale"  datatype="bool" />
+			<Pin name="Accent Lines"    datatype="bool" default="1" />
+			<!--<Pin name="Linear Mode"     datatype="bool" />-->
+		</GUI>
+	</Plugin>
+
+
+
+	<!-- Hi-Res Image ================================================================ -->
+	
+	<Plugin id="Sasha-Hi-Res Image" name="s Hi-Res Image" category="Sasha Modules\Sub-Controls\Image" helpUrl="..\Sasha\Help\s-Hi-Res-Image.html">
+		<GUI graphicsApi="GmpiGui">
+			<Pin name="Filename" datatype="string" default="knob_med" isFilename="true" metadata="bmp" />
+
+			<Pin name="Animation Position" datatype="float" />
+			<Pin name="Mouse Down" datatype="bool" />
+
+			<Pin name="Columns"         datatype="int"    default="1"   isMinimised="true" />
+			<Pin name="Rows"            datatype="int"    default="25"   isMinimised="true" />
+			<Pin name="Density"         datatype="float"  default="2"   isMinimised="true" />
+			<Pin name="Mouse Precision" datatype="float"  default="200" isMinimised="true" />
+			<Pin name="Fine Factor"     datatype="float"  default="5"   isMinimised="true" />
+
+			<Pin name="Hint"            datatype="string" />
+			<Pin name="Menu Items"      datatype="string" />
+			<Pin name="Menu Selection"  datatype="int" />
+
+			<Pin name="Frame Count"     datatype="int"    direction="out" />
+			<Pin name="Mouse Over"      datatype="bool"   direction="out" />
+		</GUI>
+	</Plugin>
+	
+	
+	
+	<!-- Listbox ================================================================ -->
+	
+	<Plugin id="Sasha-Listbox" name="s Listbox" category="Sasha Modules\Sub-Controls\List" helpUrl="..\Sasha\Help\s-Listbox.html">
+		<GUI graphicsApi="GmpiGui">
+			<Pin name="Choice"         datatype="int" />
+			<Pin name="Item List"      datatype="string" />
+			<Pin name="Style"          datatype="string" default="normal" />
+			<Pin name="Writeable"      datatype="bool"   default="1" />
+			<Pin name="Greyed"         datatype="bool" />
+			<Pin name="Hint"           datatype="string" />
+			<Pin name="Menu Items"     datatype="string" />
+			<Pin name="Menu Selection" datatype="int" />
+			<Pin name="Text Color"     datatype="string" default="FFFFFF"   isMinimised="true" />
+			<Pin name="Text Selected"  datatype="string" default="FFFFFF"   isMinimised="true" />
+			<Pin name="Scroll Bar"     datatype="string" default="80808080" isMinimised="true" />
+			<Pin name="Selected Bg"    datatype="string" default="0080FF"   isMinimised="true" />
+			<Pin name="Background"     datatype="string" default="00000000" isMinimised="true" />
+			<Pin name="Font Size"      datatype="float"  default="14"       isMinimised="true" />
+			<Pin name="Row Height"     datatype="float"  default="20"       isMinimised="true" />
+			<Pin name="Padding"        datatype="float"  default="8"        isMinimised="true" />
+		</GUI>
+	</Plugin>
+
+
+
+	<!-- Merge Text ================================================================ -->
+	
+	<Plugin id="Sasha-Merge Text 2" name="s Merge" category="Sasha Modules\Sub-Controls\Text" helpUrl="..\Sasha\Help\s-Merge-Text.html">
+		<GUI>
+			<Pin name="Text Out"  datatype="string" />
+			<Pin name="Separator" datatype="string" />
+			<Pin name="Text Out"  datatype="string" direction="out" />
+			<Pin name="Spare"     datatype="string" autoRename="true" autoDuplicate="true" />
+		</GUI>
+	</Plugin>
+
+	<Plugin id="Sasha-Merge Text" name="s Merge 1" category="Sasha Modules\Zzz" helpUrl="..\Sasha\Help\s-Merge-Text.html">
+		<GUI>
+			<Pin name="Separator" datatype="string" />
+			<Pin name="Text"      datatype="string" direction="out" />
+			<Pin name="Spare"     datatype="string" autoRename="true" autoDuplicate="true" />
+		</GUI>
+	</Plugin>
+
+
+
+	<!-- Midi Monitor ================================================================ -->
+
+	<Plugin id="Sasha-Midi Monitor" name="s Monitor" category="Sasha Modules\MIDI" helpUrl="..\Sasha\Help\s-Monitor-MIDI.html">
+		<Parameters>
+			<Parameter id="0" name="Data" datatype="string" ignorePatchChange="true" persistant="false" />
+			<Parameter id="1" name="Type" datatype="string" ignorePatchChange="true" persistant="false" />
+		</Parameters>
+		<Audio>
+			<Pin name="Data"             datatype="string" parameterId="0"  direction="out" />
+			<Pin name="Type"             datatype="string" parameterId="1"  direction="out" />
+			<Pin name="MIDI"             datatype="midi" />
+			<Pin name="Rows"             datatype="int"    default="13"     isMinimised="true" />
+			<Pin name="Show Note"        datatype="bool"   default="1" />
+			<Pin name="Show Aftertouch"  datatype="bool"   default="1" />
+			<Pin name="Show Bender"      datatype="bool"   default="1" />
+			<Pin name="Show Control"     datatype="bool"   default="1" />
+			<Pin name="Show System"      datatype="bool"   default="1" />
+			<Pin name="Freeze"           datatype="bool" />
+			<Pin name="Reset"            datatype="bool" />
+		</Audio>
+		<GUI graphicsApi="GmpiGui">
+			<Pin name="Data"             datatype="string" parameterId="0" />
+			<Pin name="Type"             datatype="string" parameterId="1" />
+			<Pin name="Show Header"      datatype="bool"   default="1"      isMinimised="true" />
+			<Pin name="Row Height"       datatype="float"  default="18"     isMinimised="true" />
+			<Pin name="Font Size"        datatype="float"  default="13"     isMinimised="true" />
+			<Pin name="Background Color" datatype="string" default="101040" isMinimised="true" />
+			<Pin name="Note Color"       datatype="string" default="FFE0A0" isMinimised="true" />
+			<Pin name="Aftertouch Color" datatype="string" default="80FFC0" isMinimised="true" />
+			<Pin name="Bender Color"     datatype="string" default="FFA0C0" isMinimised="true" />
+			<Pin name="Control Color"    datatype="string" default="80E0FF" isMinimised="true" />
+			<Pin name="System Color"     datatype="string" default="D0E0F0" isMinimised="true" />
+		</GUI>
+	</Plugin>
+
+
+
+	<!-- Pattern ================================================================ -->
+
+	<Plugin id="Sasha-Pattern Input" name="s Pattern Input" category="Sasha Modules\Sequencer" helpUrl="..\Sasha\Help\s-Pattern-Input.html">
+		<Parameters>
+			<Parameter id="0" name="Pattern Patch Memory" datatype="blob" private="true" />
+			<Parameter id="1" name="Lock Patch Memory"    datatype="bool" private="true" ignorePatchChange="true" persistant="false" />
+		</Parameters>
+		<Audio>
+			<Pin name="Pattern Patch Memory"  datatype="blob"   parameterId="0" />
+			<Pin name="Pattern (Float)"       datatype="blob"   direction="out" />
+			<Pin name="Playable Steps"        datatype="int"    direction="out" />
+		</Audio>							  
+		<GUI graphicsApi="GmpiGui">			  
+			<Pin name="Pattern Patch Memory"  datatype="blob"   parameterId="0" />
+			<Pin name="Lock Patch Memory"     datatype="bool"   parameterId="1" />
+											  
+			<Pin name="TOTAL STEPS"           datatype="int"    default="16" isMinimised="true" />
+											  
+			<Pin name="Pattern File"          datatype="blob"   direction="out" />
+			<Pin name="Playable Steps"        datatype="int"    direction="out" />
+			<Pin name="Bipolar"               datatype="bool"   direction="out" />
+											  
+			<Pin name="Lock"                  datatype="bool"   direction="out" />
+			<Pin name="Reset"                 datatype="bool"   direction="out" />
+			<Pin name="Randomize"             datatype="bool"   direction="out" />
+			<Pin name="Mouse Over"            datatype="bool"   direction="out" />
+									          
+			<Pin name="Mouse Down"            datatype="bool" />
+									          
+			<Pin name="Gap Width"             datatype="float"  default="1" isMinimised="true" />
+			<Pin name="Top Line Height"       datatype="float"  default="1" isMinimised="true" />
+			<Pin name="Main Color"            datatype="string" default="808080" />
+			<Pin name="Current Step Color"    datatype="string" />
+			<Pin name="Bar Opacity"           datatype="float"  default="0.5" isMinimised="true" />
+			<Pin name="Column Opacity"        datatype="float"  default="0.25" isMinimised="true" />
+			
+			<Pin name="Current Step"          datatype="int" />
+
+			<Pin name="Log" datatype="string" direction="out"   private="true"/>
+		</GUI>
+	</Plugin>
+
+	<Plugin id="Sasha-Pattern Input Int" name="s Pattern Input (Int)" category="Sasha Modules\Sequencer" helpUrl="..\Sasha\Help\s-Pattern-Input-Int.html">
+		<Parameters>
+			<Parameter id="0" name="Pattern Patch Memory" datatype="blob"  private="true" />
+			<Parameter id="1" name="Lock Patch Memory"    datatype="bool"  private="true" ignorePatchChange="true" persistant="false" />
+		</Parameters>
+		<Audio>
+			<Pin name="Pattern Patch Memory"  datatype="blob"   parameterId="0" />
+			<Pin name="Pattern (Int)"         datatype="blob"   direction="out" />
+			<Pin name="Playable Steps"        datatype="int"    direction="out" />
+			<Pin name="Total Rows"            datatype="int"    direction="out" />
+		</Audio>											    
+		<GUI graphicsApi="GmpiGui">							    
+			<Pin name="Pattern Patch Memory"  datatype="blob"   parameterId="0" />
+			<Pin name="Lock Patch Memory"     datatype="bool"   parameterId="1" />
+											  				    
+			<Pin name="TOTAL STEPS"           datatype="int"    default="16" isMinimised="true" />
+			<Pin name="TOTAL ROWS"            datatype="int"    default="25" isMinimised="true" />
+											  				    
+			<Pin name="Pattern File"          datatype="blob"   direction="out" />
+			<Pin name="Playable Steps"        datatype="int"    direction="out" />
+			<Pin name="Total Rows (Out)"      datatype="int"    direction="out" />
+			<Pin name="Visible Rows"          datatype="int"    direction="out" />
+			<Pin name="Offset Rows"           datatype="int"    direction="out" />
+			<Pin name="Bipolar"               datatype="bool"   direction="out" />
+											  				    
+			<Pin name="Lock"                  datatype="bool"   direction="out" />
+			<Pin name="Reset"                 datatype="bool"   direction="out" />
+			<Pin name="Randomize"             datatype="bool"   direction="out" />
+			<Pin name="Mouse Over"            datatype="bool"   direction="out" />
+											  
+			<Pin name="Mouse Down"            datatype="bool" />
+											  
+			<Pin name="Gap Width"             datatype="float"  default="1" isMinimised="true" />
+			<Pin name="Main Color"            datatype="string" default="808080" />
+			<Pin name="Current Step Color"    datatype="string" />
+			<Pin name="Natural Opacity"       datatype="float"  default="0.25" isMinimised="true" />
+			<Pin name="Sharp Opacity"         datatype="float"  isMinimised="true" />
+			
+			<Pin name="Current Step"          datatype="int" />
+			
+			<Pin name="Log" datatype="string" direction="out"   private="true"/>
+		</GUI>
+	</Plugin>
+
+	<Plugin id="Sasha-Pattern Int to Sample" name="s Pattern (Int) to Sample" category="Sasha Modules\Conversion" helpUrl="..\Sasha\Help\s-Pattern-Int-to-Sample.html">
+		<Audio>
+			<Pin name="Pattern (Int)"  datatype="blob" />
+			<Pin name="Total Rows"     datatype="int" />
+			<Pin name="Chiptune"       datatype="bool" default="1" />
+			<Pin name="Sample"         datatype="blob" direction="out" />
+		</Audio>
+	</Plugin>
+	
+	<Plugin id="Sasha-Pattern Player" name="s Pattern Player" category="Sasha Modules\Sequencer" helpUrl="..\Sasha\Help\s-Pattern-Player.html">
+		<Audio>
+			<Pin name="Pattern (Float)" datatype="blob" />
+			<Pin name="Current Step"    datatype="int" />
+			<Pin name="Out"             datatype="float" rate="audio" direction="out" />
+		</Audio>
+	</Plugin>
+
+	<Plugin id="Sasha-Pattern Player Int" name="s Pattern Player (Int)" category="Sasha Modules\Sequencer" helpUrl="..\Sasha\Help\s-Pattern-Player-Int.html">
+		<Audio>
+			<Pin name="Pattern (Int)" datatype="blob" />
+			<Pin name="Current Step"  datatype="int" />
+			<Pin name="Out"           datatype="int" direction="out" />
+		</Audio>
+	</Plugin>
+	
+	
+	
+	<!-- Popup Menu ================================================================ -->
+	
+	<Plugin id="Sasha-Popup Menu" name="s Popup Menu" category="Sasha Modules\Sub-Controls\List" helpUrl="..\Sasha\Help\s-Popup-Menu.html">
+		<GUI graphicsApi="GmpiGui">
+			<Pin name="Choice"         datatype="int" />
+			<Pin name="Item List"      datatype="string" />
+			<Pin name="Style"          datatype="string" default="normal" />
+			<Pin name="Writeable"      datatype="bool"   default="1" />
+			<Pin name="Greyed"         datatype="bool" />
+			<Pin name="Hint"           datatype="string" />
+			<Pin name="Menu Items"     datatype="string" />
+			<Pin name="Menu Selection" datatype="int" />
+			<Pin name="Heading"        datatype="string" default="Menu" />
+			<Pin name="Trigger Mode"   datatype="bool" />
+			<Pin name="Mouse Over"     datatype="bool"   direction="out" />
+			<!--<Pin name="Impulse"        datatype="bool" />-->
+		</GUI>
+	</Plugin>
+
+
+
+	<!-- Rescale ================================================================ -->
+
+	<Plugin id="Sasha-Rescale" name="s Rescale" category="Sasha Modules\Modifiers" helpUrl="..\Sasha\Help\s-Rescale.html">
+		<Audio>
+			<Pin name="Input"    datatype="float" rate="audio" linearInput="true" />
+			<Pin name="In Low"   datatype="float" rate="audio" linearInput="true" default="0" />
+			<Pin name="In High"  datatype="float" rate="audio" linearInput="true" default="1" />
+			<Pin name="Out Low"  datatype="float" rate="audio" linearInput="true" default="0" />
+			<Pin name="Out High" datatype="float" rate="audio" linearInput="true" default="1" />
+			<Pin name="Output"   datatype="float" rate="audio" direction="out" />
+		</Audio>
+	</Plugin>
+
+	<Plugin id="Sasha-FloatRescale" name="s Rescale" category="Sasha Modules\Sub-Controls\Float" helpUrl="..\Sasha\Help\s-Rescale-Float.html">
+		<GUI>
+			<Pin name="A I/O"  datatype="float" />
+			<Pin name="A Low"  datatype="float" default="0" />
+			<Pin name="A High" datatype="float" default="10" />
+			<Pin name="B Low"  datatype="float" default="0" />
+			<Pin name="B High" datatype="float" default="10" />
+			<Pin name="B I/O"  datatype="float" direction="out" />
+		</GUI>
+	</Plugin>
+	
+	
+	
+	<!-- Reset ================================================================ -->
+	
+	<Plugin id="Sasha-Reset 4" name="s Reset" category="Sasha Modules\Sub-Controls\Float" helpUrl="..\Sasha\Help\s-Reset-Float.html">
+		<GUI>
+			<Pin name="Animation Position" datatype="float" />
+			
+			<Pin name="Mouse Down"         datatype="bool" />
+			<Pin name="Interval (ms)"      datatype="float" isMinimised="true" default="250" />
+			<Pin name="Spring"             datatype="bool"  isMinimised="true" />
+
+			<Pin name="Reset"              datatype="bool" />
+			<Pin name="Reset Value"        datatype="float" isMinimised="true" default="0.5" />
+			
+			<Pin name="Randomize"          datatype="bool" />
+			<Pin name="Random Max"         datatype="float" isMinimised="true" default="1" />
+			<Pin name="Random Min"         datatype="float" isMinimised="true" default="0" />
+		</GUI>
+	</Plugin>
+
+	<Plugin id="Sasha-Reset3" name="s Reset 3" category="Sasha Modules\Zzz" helpUrl="..\Sasha\Help\s-Reset-Float.html">
+		<GUI>
+			<Pin name="Animation Position" datatype="float" />
+			<Pin name="Reset Value"        datatype="float" default="0.5" />
+			<Pin name="Interval (ms)"      datatype="float" isMinimised="true" default="250" />
+			<Pin name="Spring"             datatype="bool"  isMinimised="true" />
+			<Pin name="Random Max"         datatype="float" default="1" />
+			<Pin name="Random Min"         datatype="float" default="0" />
+			<Pin name="Reset"              datatype="bool" />
+			<Pin name="Mouse Down"         datatype="bool" />
+			<Pin name="Randomize"          datatype="bool" />
+			<Pin name="Reset"              datatype="bool"  direction="out" />
+			<Pin name="Mouse Down"         datatype="bool"  direction="out" />
+			<Pin name="Randomize"          datatype="bool"  direction="out" />
+		</GUI>
+	</Plugin>
+
+	<Plugin id="Sasha-Reset" name="s Reset 1" category="Sasha Modules\Zzz" helpUrl="..\Sasha\Help\s-Reset-Float.html">
+		<GUI>
+			<Pin name="Animation Position" datatype="float" />
+			<Pin name="Mouse Down"         datatype="bool" />
+			<Pin name="Reset Value"        datatype="float" isMinimised="true" default="0" />
+			<Pin name="Interval (ms)"      datatype="float" isMinimised="true" default="266" />
+			<Pin name="Spring"             datatype="bool"  isMinimised="true" />
+			<Pin name="Randomize"          datatype="bool"  direction="out" />
+			<Pin name="Reset"              datatype="bool"  direction="out" />
+		</GUI>
+	</Plugin>
+
+
+
+	<!-- Saturate ================================================================ -->
+
+	<Plugin id="Sasha-Saturate 2" name="s Saturate" category="Sasha Modules\Modifiers" helpUrl="..\Sasha\Help\s-Saturate.html">
+		<Audio>
+			<Pin name="In"        datatype="float" rate="audio" />
+			<Pin name="Drive"     datatype="float" rate="audio" />
+			<Pin name="OS Factor" datatype="int"   default="3"/>
+			<Pin name="Out"       datatype="float" rate="audio" direction="out" />
+		</Audio>
+	</Plugin>
+	
+	<Plugin id="Sasha-Saturate" name="s Saturate 1" category="Sasha Modules\Zzz" helpUrl="..\Sasha\Help\s-Saturate.html">
+		<Audio>
+			<Pin name="In"    datatype="float" rate="audio" />
+			<Pin name="Drive" datatype="float" rate="audio" />
+			<Pin name="Out"   datatype="float" rate="audio" direction="out" />
+		</Audio>
+	</Plugin>
+	
+	
+	
+	<!-- Scope ================================================================ -->
+	
+	<Plugin id="Sasha-Scope" name="s Scope" category="Sasha Modules\Display" helpUrl="..\Sasha\Help\s-Scope.html">
+		<Parameters>
+			<Parameter id="0" name="Trace A"    datatype="blob" private="true" ignorePatchChange="true" isPolyphonic="true" persistant="false" />
+			<Parameter id="1" name="Trace B"    datatype="blob" private="true" ignorePatchChange="true" isPolyphonic="true" persistant="false" />
+			<Parameter id="2" name="Polyphonic" datatype="bool" private="true" ignorePatchChange="true" persistant="false" />
+		</Parameters>
+		<Audio>
+			<Pin name="Voice Active" hostConnect="Voice/Active" datatype="float" isPolyphonic="true" />
+			
+			<Pin name="Trace A"    datatype="blob" parameterId="0" direction="out" isPolyphonic="true" />
+			<Pin name="Trace B"    datatype="blob" parameterId="1" direction="out" isPolyphonic="true" />
+			<Pin name="Polyphonic" datatype="bool" parameterId="2" direction="out" />
+			
+			<Pin name="In A"       datatype="float" rate="audio" />
+			<Pin name="In B"       datatype="float" rate="audio" />
+		</Audio>
+		<GUI graphicsApi="GmpiGui">
+			<Pin name="Voice Gate"         hostConnect="Voice/Gate" datatype="float" isPolyphonic="true" />
+									       
+			<Pin name="Trace A"            datatype="blob"   parameterId="0" isPolyphonic="true" />
+			<Pin name="Trace B"            datatype="blob"   parameterId="1" isPolyphonic="true" />
+			<Pin name="Polyphonic"         datatype="bool"   parameterId="2" />
+										   
+			<Pin name="Trace A Color"      datatype="string" default="FF88AA" />
+			<Pin name="Trace B Color"      datatype="string" default="88AAFF" />
+			<Pin name="Trace Poly Opacity" datatype="float"  default="0.125" />
+			<Pin name="Text Color"         datatype="string" default="88C4D6F8" />
+			<Pin name="Grid Opacity"       datatype="float"  default="0.125" />
+			<Pin name="Background Color"   datatype="string" default="08193B" />
+										   
+			<Pin name="Left Volt Scale"    datatype="bool" default="1" />
+			<Pin name="Right Volt Scale"   datatype="bool" default="1" />
+			<Pin name="Accent Lines"       datatype="bool" default="1" />
+		</GUI>
+	</Plugin>
+	
+	
+	
+	<!-- Scroll Bar ================================================================ -->
+	
+	<Plugin id="Sasha-Scroll Bar 2" name="s Scroll Bar" category="Sasha Modules\Sub-Controls\Control" helpUrl="..\Sasha\Help\s-Scroll-Bar.html">
+		<GUI graphicsApi="GmpiGui">
+			<Pin name="Total"        datatype="int" />
+			<Pin name="Visible"      datatype="int" />
+			<Pin name="Offset"       datatype="int" />
+			<Pin name="Mouse Down"   datatype="bool" />
+			<Pin name="Increase"     datatype="bool"   direction="out" />
+			<Pin name="Decrease"     datatype="bool"   direction="out" />
+			<Pin name="Background"   datatype="string" default="80000000" isMinimised="true" />
+			<Pin name="Foreground"   datatype="string" default="0080FF"   isMinimised="true" />
+			<Pin name="Resize Marks" datatype="string" default="80000000" isMinimised="true" />
+			<Pin name="Min Visible"  datatype="int"    default="64" isMinimised="true" />
+		</GUI>
+	</Plugin>
+
+	<Plugin id="Sasha-Scroll Bar" name="s Scroll Bar 1" category="Sasha Modules\Zzz" helpUrl="..\Sasha\Help\s-Scroll-Bar.html">
+		<GUI graphicsApi="GmpiGui">
+			<Pin name="Offset"       datatype="int" />
+			<Pin name="Visible"      datatype="int" />
+			<Pin name="Total"        datatype="int" />
+			<Pin name="Mouse Down"   datatype="bool" />
+			<Pin name="Decrease"     datatype="bool"   direction="out" />
+			<Pin name="Increase"     datatype="bool"   direction="out" />
+			<Pin name="Background"   datatype="string" default="80000000" isMinimised="true" />
+			<Pin name="Foreground"   datatype="string" default="0080FF"   isMinimised="true" />
+			<Pin name="Resize Marks" datatype="string" default="80000000" isMinimised="true" />
+		</GUI>
+	</Plugin>
+	
+	
+	
+	<!-- Song Position ================================================================ -->
+	
+	<Plugin id="Sasha-Song Position" name="s Song Position" category="Sasha Modules\Special" helpUrl="..\Sasha\Help\s-Song-Position.html">
+		<Audio>
+			<Pin name="Host BPM"       datatype="float" hostConnect="Time/BPM" />
+			<Pin name="Host Transport" datatype="bool"  hostConnect="Time/TransportPlaying" />
+			<Pin name="Host Position"  datatype="float" hostConnect="Time/SongPosition" />
+			<Pin name="Tempo Out"      datatype="float" rate="audio" direction="out" />
+			<Pin name="Transport Run"  datatype="float" rate="audio" direction="out" />
+			<Pin name="Song Position"  datatype="float" rate="audio" direction="out" />
+		</Audio>
+	</Plugin>
+
+	<Plugin id="Sasha-Song Phase" name="s Song Phase" category="Sasha Modules\Special" helpUrl="..\Sasha\Help\s-Song-Phase.html">
+		<Audio>
+			<Pin name="Host BPM"       datatype="float" hostConnect="Time/BPM" />
+			<Pin name="Host Transport" datatype="bool"  hostConnect="Time/TransportPlaying" />
+			<Pin name="Host Position"  datatype="float" hostConnect="Time/SongPosition" />
+			<Pin name="Tempo Out"      datatype="float" direction="out" />
+			<Pin name="Transport Run"  datatype="bool"  direction="out" />
+			<Pin name="Song Phase"     datatype="float" rate="audio" direction="out" />
+			<Pin name="Sync Impulse"   datatype="float" rate="audio" direction="out" />
+		</Audio>
+	</Plugin>
+
+
+
+	<!-- To List ================================================================ -->
+
+	<Plugin id="Sasha-Animations to List" name="s Animations to List" category="Sasha Modules\Sub-Controls\List" helpUrl="..\Sasha\Help\s-To-List.html">
+		<GUI>
+			<Pin name="List"  datatype="string" direction="out" />
+			<Pin name="Spare" datatype="float"  autoRename="true" autoDuplicate="true" />
+		</GUI>
+	</Plugin>
+
+	<Plugin id="Sasha-Texts to List" name="s Texts to List" category="Sasha Modules\Sub-Controls\List" helpUrl="..\Sasha\Help\s-To-List.html">
+		<GUI>
+			<Pin name="List"  datatype="string" direction="out" />
+			<Pin name="Spare" datatype="string" autoRename="true" autoDuplicate="true" />
+		</GUI>
+	</Plugin>
+
+	<Plugin id="Sasha-List of Lists" name="s List of Lists" category="Sasha Modules\Sub-Controls\List" helpUrl="..\Sasha\Help\s-To-List.html">
+		<GUI>
+			<Pin name="List"  datatype="string" direction="out" />
+			<Pin name="Spare" datatype="string" autoRename="true" autoDuplicate="true" />
+		</GUI>
+	</Plugin>
+
+
+
+	<!-- Voice Number ================================================================ -->
+
+	<Plugin id="Sasha-Voice Number" name="s Voice Number" category="Sasha Modules/Special" helpUrl="..\Sasha\Help\s-Voice-Number.html">
+		<Audio>
+			<Pin name="Gate"         datatype="float" hostConnect="Voice/Gate" />
+			<Pin name="Voice Number" datatype="int"   direction="out" />
+		</Audio>
+	</Plugin>
+	
+	
+	
+</PluginList>
